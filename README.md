@@ -31,3 +31,10 @@ LÚKA is a concept website for a modern Bratislava flower studio. The project fo
 ## Important Note
 
 This is a frontend portfolio project. The checkout is a demonstration only; payments and orders are not processed.
+
+## Screenshots 
+<img width="1465" height="875" alt="cart" src="https://github.com/user-attachments/assets/4f915fb5-cede-42a5-a06d-9a7161b4b9ba" /><img width="1447" height="905" alt="hero" src="https://github.com/user-attachments/assets/2f8bb9ea-ffdb-4a3f-b985-a6d6f2320d45" />
+<img width="1465" height="954" alt="gallery" src="https://github.com/user-attachments/assets/c83bcbb3-c8bd-4a23-ac1a-b5981df63952" />
+
+<img width="1452" height="931" alt="order" src="https://github.com/user-attachments/assets/a0f5d515-838c-4a3c-9a82-f067a4e78f33" />
+<img width="1435" height="835" alt="ordered" src="https://github.com/user-attachments/assets/de25d815-92b5-459b-af34-9045e1a1d267" />
