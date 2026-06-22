@@ -1,0 +1,24 @@
+.product-detail { padding-top: 7.5rem; display: grid; grid-template-columns: 1.35fr .8fr; gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+.detail-gallery { display: grid; grid-template-columns: 1.35fr .65fr; gap: 1rem; }
+.detail-main, .detail-secondary { position: relative; overflow: hidden; border-radius: var(--radius); background: var(--surface); }
+.detail-main { min-height: 78vh; }
+.detail-secondary { min-height: 48vh; align-self: end; }
+.detail-gallery img { object-fit: cover; }
+.detail-copy { position: sticky; top: 7rem; display: grid; gap: 2.5rem; padding-bottom: 3rem; }
+.detail-copy h1 { font-size: clamp(3rem, 6vw, 5.5rem); line-height: .95; letter-spacing: -.055em; margin-top: .5rem; }
+.detail-lede { color: var(--muted); font-size: 1.08rem; line-height: 1.65; margin-top: 1.2rem; }
+.product-facts { display: grid; gap: .8rem; margin-top: 1.5rem; }
+.product-facts > div { display: grid; grid-template-columns: 7rem 1fr; padding-top: .8rem; border-top: 1px solid var(--line); }
+.product-facts dt { color: var(--muted); }
+.buy-form { display: grid; gap: 1.2rem; }
+.buy-form fieldset { border: 0; padding: 0; }
+.variant-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; margin-top: .55rem; }
+.variant { border: 1px solid var(--line); border-radius: 10px; padding: .8rem; display: grid; gap: .2rem; cursor: pointer; }
+.variant.active { border-color: var(--primary); background: oklch(0.66 0.2 275 / .1); }
+.variant input { position: absolute; opacity: 0; pointer-events: none; }
+.variant:has(input:focus-visible) { outline: 2px solid var(--primary); outline-offset: 3px; }
+.variant span { color: var(--muted); font-size: .8rem; }
+.variant b { margin-top: .35rem; font-size: .875rem; }
+.buy-actions { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+@media (max-width: 850px) { .product-detail { grid-template-columns: 1fr; } .detail-copy { position: static; } .detail-main { min-height: 65vh; } }
+@media (max-width: 560px) { .detail-gallery { grid-template-columns: 1fr; } .detail-secondary { display: none; } .variant-grid { grid-template-columns: 1fr; } .buy-actions { align-items: stretch; flex-direction: column; } }

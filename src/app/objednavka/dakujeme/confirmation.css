@@ -1,0 +1,8 @@
+.confirmation { min-height: 90dvh; padding-top: 10rem; padding-bottom: 5rem; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.confirmation > svg { color: var(--primary); margin-bottom: 1.5rem; }
+.confirmation h1 { max-width: 13ch; margin: .7rem 0 2rem; }
+.confirmation-box { width: min(100%, 52rem); display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin-bottom: 2rem; }
+.confirmation-box div { display: grid; gap: .45rem; padding: 1.2rem; background: var(--surface); }
+.confirmation-box span { color: var(--muted); font-size: .875rem; }
+.confirmation-copy { max-width: 40rem; line-height: 1.65; margin-bottom: 1.5rem; }
+@media (max-width: 560px) { .confirmation-box { grid-template-columns: 1fr; } }

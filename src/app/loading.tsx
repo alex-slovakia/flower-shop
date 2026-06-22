@@ -1,0 +1,1 @@
+export default function Loading() { return <div className="shell" style={{ minHeight: "80dvh", paddingTop: "10rem", display: "grid", gridTemplateColumns: "2fr 1fr", gap: "2rem" }} aria-label="Načítavam stránku"><div style={{ background: "var(--surface)", borderRadius: "var(--radius)" }} /><div style={{ background: "var(--surface)", borderRadius: "var(--radius)" }} /></div>; }

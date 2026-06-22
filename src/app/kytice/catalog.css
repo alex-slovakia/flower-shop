@@ -1,0 +1,5 @@
+.catalog-tools { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; gap: 1rem; align-items: end; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+.today-check { min-height: 3.35rem; display: flex; align-items: center; gap: .7rem; padding-inline: .9rem; border: 1px solid var(--line); border-radius: 10px; }
+.today-check input { accent-color: var(--primary); width: 1.05rem; height: 1.05rem; }
+@media (max-width: 800px) { .catalog-tools { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .catalog-tools { grid-template-columns: 1fr; } }

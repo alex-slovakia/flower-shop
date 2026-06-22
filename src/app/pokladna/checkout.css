@@ -1,0 +1,30 @@
+.checkout-grid { display: grid; grid-template-columns: 1fr 24rem; gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+.checkout-fields { display: grid; gap: 1.5rem; }
+.form-section { background: var(--surface); padding: clamp(1.25rem, 3vw, 2rem); border-radius: var(--radius); }
+.form-section h2, .form-section legend { font-size: 1.35rem; font-weight: 650; margin-bottom: 1.25rem; }
+.form-section fieldset { padding: 0; border: 0; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.choice-list { display: grid; gap: .65rem; }
+.choice { display: grid; grid-template-columns: auto auto 1fr auto; gap: .8rem; align-items: center; border: 1px solid var(--line); border-radius: 10px; padding: 1rem; cursor: pointer; }
+.choice.active { border-color: var(--primary); background: oklch(0.66 0.2 275 / .08); }
+.choice input { accent-color: var(--primary); }
+.choice svg { color: var(--primary); }
+.choice span { display: grid; gap: .2rem; }
+.choice small { color: var(--muted); }
+.payment-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+.payment-tabs label { display: flex; gap: .6rem; align-items: center; padding: 1rem; border: 1px solid var(--line); border-radius: 10px; cursor: pointer; }
+.payment-tabs label.active { border-color: var(--primary); }
+.payment-tabs input { position: absolute; opacity: 0; }
+.payment-tabs label:has(input:focus-visible) { outline: 2px solid var(--primary); outline-offset: 3px; }
+.card-fields { margin-top: 1rem; }
+.demo-notice { color: var(--muted); font-size: .875rem; line-height: 1.5; margin-top: 1rem; }
+.checkout-summary { position: sticky; top: 7rem; display: grid; gap: 1rem; background: var(--elevated); border-radius: var(--radius); padding: 1.4rem; }
+.checkout-summary h2 { font-size: 1.35rem; }
+.checkout-item { display: grid; grid-template-columns: auto 1fr auto; gap: .7rem; padding-bottom: .9rem; border-bottom: 1px solid var(--line); }
+.checkout-item div { display: grid; gap: .2rem; }
+.checkout-item small { color: var(--muted); }
+.checkout-total { padding-top: 1rem; border-top: 1px solid var(--line); font-size: 1.15rem; }
+.checkout-loading { display: grid; grid-template-columns: 1fr 24rem; gap: 4rem; }
+.checkout-loading div { height: 30rem; border-radius: var(--radius); background: var(--surface); }
+@media (max-width: 840px) { .checkout-grid { grid-template-columns: 1fr; } .checkout-summary { position: static; } }
+@media (max-width: 560px) { .form-grid, .payment-tabs { grid-template-columns: 1fr; } .field[style] { grid-column: auto !important; } .choice { grid-template-columns: auto 1fr auto; } .choice input { grid-row: span 2; } .choice svg { display: none; } }

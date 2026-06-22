@@ -1,0 +1,2 @@
+"use client";
+export default function ErrorPage({ reset }: { reset: () => void }) { return <section className="confirmation shell"><p>Niečo sa nepodarilo</p><h1 className="section-title">Kvety zostali na stole.</h1><p className="muted confirmation-copy">Skúste stránku načítať znova. Obsah košíka zostane uložený vo vašom prehliadači.</p><button className="button" onClick={reset}>Skúsiť znova</button></section>; }
