@@ -6,7 +6,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://luka-bratislava.demo"),
+  metadataBase: new URL("https://kvetinyluka.aiasistentka.com"),
   title: { default: "LÚKA Bratislava | Kvety doručené dnes", template: "%s | LÚKA" },
   description: "Súčasné kytice viazané v Bratislave a doručené ešte dnes. Portfóliový demo e-shop.",
 };

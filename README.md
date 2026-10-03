@@ -1,6 +1,6 @@
 # LÚKA Bratislava — Premium Flower Shop Demo
 
-🌸 **Live demo:** [kvetinyluka.netlify.app](https://kvetinyluka.netlify.app/)
+🌸 **Live demo:** [kvetinyluka.aiasistentka.com](https://kvetinyluka.aiasistentka.com/)
 
 A premium, responsive flower-shop e-commerce experience designed for same-day flower delivery in Bratislava.
 
